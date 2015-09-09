@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="airBoxIcon" destination="HXz-jZ-ccS" id="doN-Iw-0iW"/>
+                <outlet property="airBoxView" destination="sFJ-aU-keZ" id="et8-Qx-Uig"/>
+                <outlet property="airManagerWaitTitle" destination="D3R-R5-9xF" id="Thc-4e-jSI"/>
+                <outlet property="airManagerWaitView" destination="PTU-S4-OcL" id="Tza-HN-QtL"/>
+                <outlet property="lblAirManagerName" destination="RXO-BG-u2e" id="OXF-tv-nYN"/>
+                <outlet property="lblAirScore" destination="kSC-NK-SD3" id="VF3-Y5-oIr"/>
+                <outlet property="lblCity" destination="MwG-pS-7Hj" id="gXR-x4-ALW"/>
+                <outlet property="lblDate" destination="GJo-Nw-eAe" id="l8L-Mj-mqS"/>
+                <outlet property="lblRoomEnvironment" destination="Pdi-H6-Mat" id="X1G-r4-yJ6"/>
+                <outlet property="lblTemperature" destination="iVk-TI-aHU" id="2At-IO-QeB"/>
+                <outlet property="lblWeather" destination="QM2-s8-7Bk" id="WDm-D6-09S"/>
+                <outlet property="tapAirRecognizer" destination="bu6-nk-vvm" id="2pP-jL-g7X"/>
+                <outlet property="tapWeatheRecognizer" destination="IBW-82-ubL" id="tfr-IV-Rjp"/>
+                <outlet property="view" destination="1" id="PjZ-AL-bqV"/>
+                <outlet property="weathView" destination="bPQ-ef-d3N" id="uvc-3M-bGJ"/>
+                <outlet property="weatherBackGroundView" destination="2nh-ni-ETy" id="MOA-dK-g94"/>
+                <outlet property="weatherIcon" destination="4U4-Q8-d7d" id="jNb-99-Fcg"/>
+                <outlet property="weatherWaitTitle" destination="zJF-en-yVv" id="AmW-9G-CuW"/>
+                <outlet property="weatherWaitView" destination="eMI-5u-pKq" id="PGs-Bp-L9S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="guideline_home35.png" id="W4l-t1-JsE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <gestureRecognizers/>
+                </imageView>
+                <view contentMode="scaleToFill" id="bPQ-ef-d3N" userLabel="实时天气">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="weather_bg2.png" id="2nh-ni-ETy">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather_icon_qing.png" id="4U4-Q8-d7d">
+                            <rect key="frame" x="102" y="30" width="116" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iVk-TI-aHU">
+                            <rect key="frame" x="65" y="146" width="190" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QM2-s8-7Bk">
+                            <rect key="frame" x="20" y="194" width="280" height="27"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="eMI-5u-pKq">
+                            <rect key="frame" x="206" y="30" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获取天气信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zJF-en-yVv">
+                            <rect key="frame" x="238" y="32" width="72" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="IBW-82-ubL" appends="YES" id="J3D-gC-TU2"/>
+                        <outletCollection property="gestureRecognizers" destination="wln-K4-cB0" appends="YES" id="mTE-RY-um0"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="sFJ-aU-keZ" userLabel="室内空气">
+                    <rect key="frame" x="0.0" y="240" width="320" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="mood_icon_100.png" id="HXz-jZ-ccS">
+                            <rect key="frame" x="88" y="62" width="145" height="120"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="室内舒适" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pdi-H6-Mat">
+                            <rect key="frame" x="20" y="184" width="280" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                            <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客厅空气盒子" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RXO-BG-u2e">
+                            <rect key="frame" x="86" y="22" width="148" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kSC-NK-SD3">
+                            <rect key="frame" x="167" y="172" width="55" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aJ9-X7-dWc">
+                            <rect key="frame" x="226" y="184" width="34" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="PTU-S4-OcL">
+                            <rect key="frame" x="234" y="7" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="连接中" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D3R-R5-9xF">
+                            <rect key="frame" x="262" y="9" width="36" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康空气指数" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hZs-TS-t6Q">
+                            <rect key="frame" x="61" y="184" width="104" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="bu6-nk-vvm" appends="YES" id="Ieh-of-CDD"/>
+                        <outletCollection property="gestureRecognizers" destination="zzF-PZ-D9A" appends="YES" id="t9e-LL-RQM"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y0F-PY-Nf1">
+                    <rect key="frame" x="280" y="0.0" width="40" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                    <state key="normal" image="setting_normal.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="setting:" destination="-1" eventType="touchUpInside" id="dTc-1m-YHk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/08" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GJo-Nw-eAe">
+                    <rect key="frame" x="15" y="5" width="46" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京  7-15℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MwG-pS-7Hj">
+                    <rect key="frame" x="72" y="5" width="180" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jLd-sR-dJO">
+                    <rect key="frame" x="0.0" y="20" width="56" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="14" minY="11" maxX="14" maxY="11"/>
+                    <state key="normal" image="btn_share_bg_normal.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <tapGestureRecognizer id="IBW-82-ubL" userLabel="Tap Weather">
+            <connections>
+                <action selector="tapWeatherPage:" destination="-1" id="fAm-Mw-IhX"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="bu6-nk-vvm" userLabel="Tap Air Box">
+            <connections>
+                <action selector="tapAirPage:" destination="-1" id="P21-t9-QZB"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="fb5-S1-zJp" userLabel="Tap Help">
+            <connections>
+                <action selector="tapToHiddenHelp:" destination="-1" id="64c-ff-bnY"/>
+            </connections>
+        </tapGestureRecognizer>
+        <swipeGestureRecognizer direction="down" id="wln-K4-cB0" userLabel="Swipe Weather">
+            <connections>
+                <action selector="tapWeatherPage:" destination="-1" id="72q-u2-OX4"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="up" id="zzF-PZ-D9A" userLabel="Swipe Air Box">
+            <connections>
+                <action selector="tapAirPage:" destination="-1" id="PbQ-5U-Eyz"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="btn_share_bg_normal.png" width="56" height="44"/>
+        <image name="guideline_home35.png" width="640" height="960"/>
+        <image name="mood_icon_100.png" width="290" height="240"/>
+        <image name="setting_normal.png" width="40" height="40"/>
+        <image name="weather_bg2.png" width="640" height="1136"/>
+        <image name="weather_icon_qing.png" width="290" height="320"/>
+    </resources>
+</document>

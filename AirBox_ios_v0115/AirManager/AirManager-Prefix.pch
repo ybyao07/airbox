@@ -1,0 +1,43 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "DDLog.h"
+    #import "MBProgressHUD.h"
+    #import "Globals.h"
+
+    #import <CoreData/CoreData.h>
+
+
+    #import "AFNetworking.h"
+    #import "UIColor+Utility.h"
+    #import "UIView+Utility.h"
+    #import "Utility.h"
+    #import "NSTimer+TFAddition.h"
+    #import "NSURLConnection+Cache.h"
+    #import "DataController+Cache.h"
+    #import "AFHTTPRequestOperation+Cache.h"
+    #import "NSString+Utility.h"
+#endif
+
+
+#define IOS7  [[[UIDevice currentDevice] systemVersion] floatValue]>=7.0
+#define VIEWHEIGHT ([UIScreen mainScreen].bounds.size.height-ADDHEIGH)
+#define ADDHEIGH (([[[UIDevice currentDevice] systemVersion] floatValue]>=7.0)?20.0:0)
+#define BASEURL  @"http://uhome.haier.net:7130/"
+#define UMLAPPKEY @"5386d57356240b1d5700e74e"
+#define WeiXinAPPUrl @"http://103.8.220.165:60000/wonderweather/download"
+
+//distriUrl http://uhome.haier.net:7130/
+//textUrl http://103.8.220.165:60000/

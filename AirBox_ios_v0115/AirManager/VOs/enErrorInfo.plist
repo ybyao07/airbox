@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>00010</key>
+	<string>Request error.</string>
+	<key>00011</key>
+	<string>Request time out</string>
+	<key>03002</key>
+	<string>Device is offline</string>
+	<key>10108</key>
+	<string>Infrared code header error</string>
+	<key>10109</key>
+	<string>Infrared code length error</string>
+	<key>10120</key>
+	<string>Infrared code data error</string>
+	<key>20002</key>
+	<string>Operation failed</string>
+	<key>20201</key>
+	<string>Downloading devices information failed</string>
+	<key>20202</key>
+	<string>No Devices.</string>
+	<key>20301</key>
+	<string>Downloading device information failed</string>
+	<key>21001</key>
+	<string>Login failed</string>
+	<key>21002</key>
+	<string>Login failed</string>
+	<key>21014</key>
+	<string>Multiple exit error</string>
+	<key>21019</key>
+	<string>token overdue</string>
+	<key>22101</key>
+	<string>account doesn't exist</string>
+	<key>22102</key>
+	<string>Wrong password</string>
+	<key>22111</key>
+	<string>Your account is not acitivated.</string>
+	<key>22112</key>
+	<string>Please enter your cell phone number</string>
+	<key>22113</key>
+	<string>Please enter your email</string>
+	<key>22117</key>
+	<string>Invalid email</string>
+	<key>22118</key>
+	<string>account exsited.</string>
+	<key>22119</key>
+	<string>Invalid cell phone number</string>
+	<key>22120</key>
+	<string>Invalid email</string>
+	<key>10101</key>
+	<string>System error.</string>
+	<key>10102</key>
+	<string>Invalid parameters</string>
+	<key>10103</key>
+	<string>Invalid parameters</string>
+	<key>10104</key>
+	<string>Invalid parameter format</string>
+	<key>10107</key>
+	<string>You already have this kind of device</string>
+	<key>10105</key>
+	<string>Invalid account</string>
+	<key>10106</key>
+	<string>Resource not found.</string>
+	<key>22105</key>
+	<string>cell phone number exists</string>
+	<key>22100</key>
+	<string>Your cell phone number has been registered. Please log in.</string>
+	<key>22109</key>
+	<string>wrong account or password</string>
+	<key>22106</key>
+	<string>account exists</string>
+	<key>22103</key>
+	<string>wrong password</string>
+	<key>22805</key>
+	<string>Authentication code overdue</string>
+	<key>22820</key>
+	<string>wrong account or password</string>
+	<key>22824</key>
+	<string>activation code overdue</string>
+</dict>
+</plist>

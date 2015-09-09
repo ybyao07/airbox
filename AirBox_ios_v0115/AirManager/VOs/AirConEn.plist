@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Temperature</key>
+	<array>
+		<string>16℃</string>
+		<string>17℃</string>
+		<string>18℃</string>
+		<string>19℃</string>
+		<string>20℃</string>
+		<string>21℃</string>
+		<string>22℃</string>
+		<string>23℃</string>
+		<string>24℃</string>
+		<string>25℃</string>
+		<string>26℃</string>
+		<string>27℃</string>
+		<string>28℃</string>
+		<string>29℃</string>
+		<string>30℃</string>
+	</array>
+	<key>WindSpeed</key>
+	<array>
+		<string>Auto Fan Speed</string>
+		<string>Fan speed high</string>
+		<string>Fan speed moderate</string>
+		<string>Fan speedLow</string>
+	</array>
+	<key>APStatus</key>
+	<array>
+		<string>净化器开启</string>
+		<string>净化器关闭</string>
+	</array>
+	<key>AirModel</key>
+	<array>
+		<string>Manual</string>
+		<string>Confortable mode</string>
+		<string>Energy-efficient</string>
+		<string>None</string>
+		<string>Constant temperature and clean</string>
+		<string>Sleep mode</string>
+	</array>
+	<key>OperationCode</key>
+	<dict>
+		<key>Auto</key>
+		<string>30e0M1</string>
+		<key>Cool</key>
+		<string>30e0M2</string>
+		<key>Heat</key>
+		<string>30e0M3</string>
+		<key>Wind</key>
+		<string>30e0M4</string>
+		<key>Dehumidify</key>
+		<string>30e0M5</string>
+		<key>Fan speed high</key>
+		<string>30e0W2</string>
+		<key>Fan speed moderate</key>
+		<string>30e0W3</string>
+		<key>Fan speedLow</key>
+		<string>30e0W4</string>
+		<key>Auto Fan Speed</key>
+		<string>30e0W6</string>
+		<key>30e0M1</key>
+		<string>Auto</string>
+		<key>30e0M2</key>
+		<string>Cool</string>
+		<key>30e0M3</key>
+		<string>Heat</string>
+		<key>30e0M4</key>
+		<string>Wind</string>
+		<key>30e0M5</key>
+		<string>Dehumidify</string>
+		<key>30e0W2</key>
+		<string>Fan speed high</string>
+		<key>30e0W3</key>
+		<string>Fan speed moderate</string>
+		<key>30e0W4</key>
+		<string>Fan speedLow</string>
+		<key>30e0W6</key>
+		<string>Auto Fan Speed</string>
+	</dict>
+	<key>AcModel</key>
+	<array>
+		<string>Cool</string>
+		<string>Heat</string>
+	</array>
+	<key>HealthyState</key>
+	<array>
+		<string>健康功能开启</string>
+		<string>健康功能关闭</string>
+	</array>
+</dict>
+</plist>
